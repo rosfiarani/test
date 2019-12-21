@@ -1,0 +1,88 @@
+.row{
+  width: 100%;
+  display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0px;
+}
+
+.catblock{
+  margin:5px 0px;
+  padding: 7px;
+  border-radius: 4px;
+  box-shadow: 0 -1px 1px 0 rgba(0,0,0,.05), 0 1px 2px 0 rgba(0,0,0,.2);
+  transition: all .2s ease;
+  background: #D09BF1;
+  position: relative;
+  overflow: hidden;
+}
+.catblock-content>a{
+  font-family: 'Montserrat-Regular',sans-serif;
+  font-size: 20px;
+}
+
+.catblock:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 4px 25px 0 rgba(0,0,0,.3), 0 0 1px 0 rgba(0,0,0,.25);
+}
+
+.catblock:hover ~.catblock-content{
+  box-shadow: inset 0 3px 0 0 #ccb65e;
+  border-color: #ccb65e;
+}
+  
+.catblock-img .overlay:hover {
+  transition: opacity .2s ease;
+  background-color: rgba(208,155,241,0.5);
+  opacity: 1;
+}
+
+.catblock-img>img{
+  width: 100%;
+}
+
+.catblock-img {
+  position: relative;
+  width: 100%;
+  transition: opacity .2s ease;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  justify-content: center;
+}
+
+.overlay>a{
+  font-family: 'Montserrat-Regular',sans-serif;
+  position: absolute;
+  text-align: center;
+  width: 70%;
+  top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  background-color: white;
+  color: black;
+  padding: 5px;
+  border: 1px solid rgba(255,255,255,.4);
+  font-size: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover
+{
+  background: #D09BF1;
+  border: 2px solid white;
+  color: white;
+}
+
